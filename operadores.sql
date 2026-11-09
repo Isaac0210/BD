@@ -48,3 +48,16 @@ where estado = 'SP' or estado = 'RJ';
 -- Seleciona todos os clientes cujo estado NÃO seja 'SP' (inverte a condição)
 select * from clientes
 where not estado = 'SP';
+
+-- Seleciona todos os produtos com o preço entre 10 e 1000
+select * from produtos
+where preco between 10 and 1000;
+
+select * from clientes
+where estado in ('SP','RJ');
+
+select * from produtos
+where nome like 'N%';
+
+select * from clientes
+where telefone is null;
