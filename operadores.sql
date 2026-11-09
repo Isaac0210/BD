@@ -17,3 +17,9 @@ select * from produtos
 where preco >= 120;
 select * from produtos
 where preco <= 120;
+select * from produtos
+where nome = 'Notebook Dell' and preco > 4000;
+select * from clientes
+where estado = 'SP' or estado = 'RJ';
+select * from clientes
+where not estado = 'SP';
